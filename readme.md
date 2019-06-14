@@ -18,3 +18,9 @@ The burn addresses that are created with this tool take a string, hash it and ad
 给定定义对象，相应的地址只是初始定义对象的散列加上校验和。添加校验和以避免输入错误。然而，与通常的校验和设计不同，校验和位不仅仅附加到未校验数据的末尾。相反，它们被插入到数据内的多个位置。这种设计使得很难在需要地址的字段中插入长串的非法数据。地址用base32编码。
 
 使用此工具创建的刻录地址采用字符串，哈希并添加校验和，并且可以将资源发送到这些地址，但是没有地址可以恢复，因为没有定义，因此没有关联的私钥。
+
+to verify the first official LCP burn address run these commands:
+
+git clone https://github.com/LovechainPTYLTD/burn_address_creator.git
+npm install
+node chash.js "Hello world."
