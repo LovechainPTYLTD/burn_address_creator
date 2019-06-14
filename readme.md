@@ -21,6 +21,16 @@ The burn addresses that are created with this tool take a string, hash it and ad
 
 to verify the first official LCP burn address run these commands:
 
+验证第一个正式的LCP刻录地址运行这些命令：
+
 git clone https://github.com/LovechainPTYLTD/burn_address_creator.git
+
 npm install
+
 node chash.js "Hello world."
+
+the expected output is:
+预期的产出是： 
+
+硬币销毁地址: 5BBNDF3LVLQEOSCI6T5WO5CYCUNQ5PRH
+是有效的地址？:  true
