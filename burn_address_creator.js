@@ -2,7 +2,7 @@
 "use strict";
 var crypto = require('crypto');
 var base32 = require('thirty-two');
-
+var getSourceString = require('./string_utils').getSourceString;
 var PI = "14159265358979323846264338327950288419716939937510";
 var zeroString = "00000000";
 
@@ -152,8 +152,12 @@ function isChashValid(encoded){
 	return checksum.equals(getChecksum(clean_data));
 }
 
-var burnAddress = getChash160(process.argv[2])
+var burnDefinition = ["sig", {pubkey: "[Hello world.@$%&]"}];
+var burnAddress = getChash160(getSourceString(burnDefinition));
+//var burnAddress = getChash160();
 console.log("硬币销毁地址:",burnAddress);
 console.log("是有效的地址？: ", isChashValid(burnAddress));
+
+
 
 
