@@ -1,6 +1,10 @@
 # LCP burn address creator
 # LCP火烧地址创建者
 
+**notice**
+a lot of the function names were written in such a way to maintain consistency with the naming convention of the original Byteball source code.
+
+
 A burn address is an address to which you can send assets that can never be recovered, because there is no private key corresponding to that address.
 
 

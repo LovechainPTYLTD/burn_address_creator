@@ -1,30 +1,33 @@
 {
-  "name": "burn_address_creator",
-  "version": "1.0.0",
-  "description": "creates burn addresses for LCP network",
-  "main": "chash.js",
-  "dependencies": {
-    "thirty-two": "^1.0.2",
-    "crypto": "^1.0.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LovechainPTYLTD/burn_address_creator.git"
-  },
-  "keywords": [
-    "burn",
-    "LCP",
-    "cryptocurrency",
-    "crypto"
-  ],
-  "author": "LCP",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LovechainPTYLTD/burn_address_creator/issues"
-  },
-  "homepage": "https://github.com/LovechainPTYLTD/burn_address_creator#readme"
+   "name": "burn_address_creator",
+   "version": "1.0.0",
+   "description": "creates burn addresses for LCP network",
+   "main": "chash.js",
+   "dependencies": {
+      "crypto": "^1.0.1",
+      "thirty-two": "^1.0.2"
+   },
+   "devDependencies": {
+      "jest": "^29.5.0"
+   },
+   "scripts": {
+      "test": "jest"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/LovechainPTYLTD/burn_address_creator.git"
+   },
+   "keywords": [
+      "burn",
+      "LCP",
+      "cryptocurrency",
+      "crypto"
+   ],
+   "author": "LCP",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/LovechainPTYLTD/burn_address_creator/issues"
+   },
+   "homepage": "https://github.com/LovechainPTYLTD/burn_address_creator#readme"
+
 }
